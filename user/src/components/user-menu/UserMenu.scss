@@ -1,5 +1,8 @@
+$yellow: #FCCF08;
+$main: #1B1B1B;
+
 .user-menu {
-    background-color: red;
+    background-color: $main;
     position: relative;
     cursor: pointer;
 
@@ -9,7 +12,7 @@
         right: 0px;
         margin: 0;
         padding: 0;
-        background: red;
+        background: $main;
         width: 200px;;
     
         li {
@@ -17,6 +20,7 @@
             margin: 0;
             padding: 0;
             padding: 3px 10px;
+            color: $yellow;
         } 
     }   
 }
