@@ -1,0 +1,20 @@
+body, html {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+#app {
+  height: 100%;
+  .main {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+
+    section {
+      flex-grow: 2;
+      display: block;
+    }
+  }
+}

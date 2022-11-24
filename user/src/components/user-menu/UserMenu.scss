@@ -1,0 +1,22 @@
+.user-menu {
+    background-color: red;
+    position: relative;
+    cursor: pointer;
+
+    ul {
+        position: absolute;
+        top: 2em;
+        right: 0px;
+        margin: 0;
+        padding: 0;
+        background: red;
+        width: 200px;;
+    
+        li {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            padding: 3px 10px;
+        } 
+    }   
+}

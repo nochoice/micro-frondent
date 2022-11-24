@@ -1,0 +1,16 @@
+$yellow: #FCCF08;
+$main: #1B1B1B;
+
+
+$breakpoints: (
+  small : 480px,
+  medium: 800px,
+  large : 1024px
+);
+
+footer {
+    text-align: center;
+    padding: 10px 0;
+    background: #1B1B1B;
+    color: #fff;
+}
