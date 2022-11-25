@@ -1,0 +1,19 @@
+version: '2'
+services:
+  layout:
+    build: ./layout
+    ports:
+     - "5000:5000"
+
+  main:
+    build: ./main
+    depends_on:
+      - layout
+      - user
+    ports:
+     - "4001:4001"
+
+  user:
+    build: ./user
+    ports:
+     - "5002:5002"
