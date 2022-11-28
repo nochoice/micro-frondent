@@ -8,12 +8,12 @@ const Header = React.lazy(() => import('layout/Header'));
 const Footer = React.lazy(() => import('layout/Footer'));
 // const UserMenu = React.lazy(() => import('user/UserMenu'));
 import UserMenu from 'user/UserMenu';
+import UserList from 'user/UserList';
 
-console.log(UserMenu)
 
-const App = () => {
-  
+const App = () => {  
   document.addEventListener('menu-open', (e) => console.log(e.detail));
+
   return (
     <div className="main">
       <Suspense fallback="">
@@ -27,7 +27,7 @@ const App = () => {
 
       
       <section>
-        
+        <UserList></UserList>
       </section>
 
       <Suspense fallback="">
@@ -36,5 +36,5 @@ const App = () => {
       
     </div>
   )
-      }
+}
 ReactDOM.render(<App />, document.getElementById("app"));
